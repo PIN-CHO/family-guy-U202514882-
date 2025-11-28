@@ -1,0 +1,172 @@
+a.namelink{
+    text-decoration: none;
+}
+/* site-wide background image (main_background.png in the same folder) */
+body{
+    background-image: url("main_background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #f6fbfa; /* fallback */
+}
+#header{
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    font-size: 80px;
+    text-shadow: 8px 8px 16px rgb(0, 0, 0);
+    text-align: center;
+    background-image: url("https://cdn.seat42f.com/wp-content/uploads/2022/10/01145137/lacx19_340_02-0074.jpg");
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    height: 300px;
+    width: 1666px;
+}
+.link{
+    color:rgb(13, 123, 163);
+    font-size: 20px;
+    font-family: KaiTi;
+    background-color: rgb(134, 197, 210);
+}
+.link:hover{
+    color: rgb(13, 123, 150);
+    font-size: 20px;
+    font-family: KaiTi;
+    background-color: rgb(134, 197, 160);
+}
+.namelink{
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-style: italic;
+    background-color: rgb(152, 216, 198);
+}
+.namelink:hover{
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-style: italic;
+    background-color: rgb(200, 216, 198);
+}
+.name{
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    font-weight: 320;
+    background-color: rgb(152, 216, 198);
+    border-radius: 6px;
+}
+.outer-block_background{
+    width: 100%;
+    height: 800px;
+    background-image: url("main_background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+
+    display: inline-block;
+    vertical-align: top;
+}
+.inline-block_character{
+    width: 250px;
+    height: 250px;
+    border: 0px solid rgb(0, 0, 0);
+    background-color: rgb(200, 216, 198);
+    margin: 20px;
+    padding: 10px; 
+    box-shadow: 10px 10px 5px rgb(100, 100, 100);
+    text-align: center;
+    border-radius: 15px;
+
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* New layout helpers for profile pages */
+.profile-wrapper{
+    max-width: 1100px;
+    margin: 24px auto;
+    padding: 20px;
+    background: rgba(255,255,255,0.85);
+    border-radius: 12px;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.12);
+}
+.profile-header{
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+}
+.profile-image{
+    flex: 0 0 320px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+.profile-image img{width:100%;display:block;height:auto}
+.profile-content{flex:1}
+.profile-content h1{margin:0 0 6px;font-size:36px}
+.profile-content h2{margin:0 0 12px;font-size:18px;color:#444}
+.profile-bio{line-height:1.6;color:#222}
+.profile-audio{margin-top:12px}
+
+.relations-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+    gap: 12px;
+    margin-top: 18px;
+}
+.relation-card{
+    display:block;
+    text-decoration:none;
+    color: #000;
+    background:linear-gradient(180deg, #f4faf6, #eaf6f0);
+    padding: 10px 12px;
+    border-radius:10px;
+    border: 1px solid rgba(0,0,0,0.06);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+.relation-card:hover{transform:translateY(-4px);transition:all .18s ease}
+.relation-card .role{color:#666;font-size:12px}
+
+@media (max-width:800px){
+    .profile-header{flex-direction:column;align-items:center}
+    .profile-image{flex:0 0 auto;width:70%;}
+    #header{width:100%;}
+}
+
+/* Homepage / Cards styling */
+.home-hero{
+    max-width:1200px;margin:30px auto;padding:30px;background:linear-gradient(180deg,rgba(255,255,255,0.9),rgba(245,250,248,0.9));border-radius:12px;text-align:center;box-shadow:0 10px 40px rgba(0,0,0,0.08)
+}
+.home-hero h1{font-size:48px;margin:0 0 6px}
+.home-hero p.lead{color:#555;margin-top:6px;font-size:18px}
+.favorites-form{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:14px 0}
+.favorites-form label{display:inline-flex;align-items:center;gap:8px;background:#f4f8f7;padding:8px 12px;border-radius:8px;border:1px solid rgba(0,0,0,0.06)}
+.favorites-form input[type="submit"]{cursor:pointer}
+
+.cards-grid{max-width:1200px;margin:18px auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;padding:10px}
+.card{background:white;border-radius:10px;padding:12px;text-align:center;box-shadow:0 8px 20px rgba(0,0,0,0.06);transition:transform .18s ease, box-shadow .18s ease}
+.card img{width:100%;height:190px;object-fit:cover;border-radius:8px}
+.card h3{margin:8px 0 4px}
+.card p{color:#555;font-size:14px}
+.card a{display:inline-block;margin-top:8px;padding:6px 10px;border-radius:8px;background:linear-gradient(180deg,#0d7ba3,#0b6e93);color:white;text-decoration:none}
+.card:hover{transform:translateY(-6px);box-shadow:0 16px 40px rgba(0,0,0,0.12)}
+
+footer .copyright{display:block;text-align:center;padding:16px;color:#777}
+.inline-block_character:hover{
+    width: 260px;
+    height: 260px;
+    border: 0px solid rgb(0, 0, 0);
+    background-color: rgb(190, 230, 200);
+    margin: 15px;
+    padding: 10px; 
+    box-shadow: 10px 10px 5px rgb(100, 100, 100);
+    text-align: center;
+    border-radius: 15px;
+
+    display: inline-block;
+    vertical-align: top;
+}
+
